@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="320.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.qwerty.HelloController">
+   <children>
+      <AnchorPane prefHeight="75.0" prefWidth="320.0" style="-fx-background-color: #000;">
+         <children>
+            <Text fill="WHITE" layoutX="59.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОГОДНИК" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField layoutX="73.0" fx:id="city" layoutY="83.0" promptText="Введите город" style="-fx-background-color: #333; -fx-border-color: RED; -fx-border-radius: 7PX; -fx-text-fill: white;">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="getData" layoutX="103.0" layoutY="125.0" mnemonicParsing="false" onAction="#initialize" text="Узнать погоду">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Text fill="#ff5555" layoutX="20.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ИНФОРМАЦИЯ" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="10.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТЕМПЕРАТУРА:" fx:id="temp_info" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="10.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОЩУЩАЕТСЯ:" fx:id="temp_feels" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="10.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МАКСИМУМ:" fx:id="temp_max" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="10.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МИНИМУМ:" fx:id="temp_min" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="10.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ДАВЛЕНИЕ:" fx:id="pressure"  textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
